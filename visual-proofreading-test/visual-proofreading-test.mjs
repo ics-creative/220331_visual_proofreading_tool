@@ -81,7 +81,7 @@ import {
     // 分かりやすいよう白黒反転し、ファイル出力
     await sharp(difference)
       .negate({ alpha: false })
-      .toFile(`${DIFF_DIR}/diff_${design}.png`);
+      .toFile(`${DIFF_DIR}/diff_${designFileName}.png`);
   }
 
   await browser.close();

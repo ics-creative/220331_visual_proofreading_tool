@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__title {
+    font-size: 1.3rem;
+  }
+  &__text {
+    font-size: 0.9rem;
+  }
+}

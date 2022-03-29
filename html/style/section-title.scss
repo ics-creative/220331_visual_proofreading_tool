@@ -1,0 +1,16 @@
+.section-title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  &:before,
+  &:after {
+    display: inline-block;
+    width: 16px;
+    content: "";
+    border-bottom: 2px solid var(--text-color);
+  }
+}

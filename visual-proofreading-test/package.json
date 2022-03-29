@@ -1,0 +1,12 @@
+{
+  "name": "visual-proofreading-test",
+  "private": true,
+  "devDependencies": {
+    "puppeteer": "13.5.1",
+    "sharp": "0.30.3"
+  },
+  "scripts": {
+    "visual-proofreading-test": "node visual-proofreading-test.mjs",
+    "advanced-visual-proofreading-test": "node advanced-visual-proofreading-test.mjs"
+  }
+}

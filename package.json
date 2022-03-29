@@ -1,0 +1,8 @@
+{
+  "name": "220331_visual_proofreading_tool",
+  "private": true,
+  "workspaces": [
+    "html",
+    "visual-proofreading-test"
+  ],
+}

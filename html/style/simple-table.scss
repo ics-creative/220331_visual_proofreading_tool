@@ -1,0 +1,21 @@
+.simple-table {
+  display: grid;
+  grid-template-columns: 160px auto;
+  &__head {
+    padding: 16px 8px;
+    font-weight: bold;
+    line-height: 2;
+    border-bottom: 1px solid var(--border-color);
+    &:last-of-type {
+      border: none;
+    }
+  }
+  &__description {
+    padding: 16px 0;
+    line-height: 2;
+    border-bottom: 1px solid var(--border-color);
+    &:last-of-type {
+      border: none;
+    }
+  }
+}

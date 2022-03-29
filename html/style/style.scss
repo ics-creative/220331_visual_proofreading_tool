@@ -1,0 +1,33 @@
+@use "global.scss";
+
+// 共通レイアウト
+@use "global-layout";
+@use "header";
+@use "hamburger-button";
+@use "contents-layout";
+@use "footer";
+
+// コンポーネント
+@use "section-title";
+@use "alternating-layout";
+@use "simple-list";
+@use "timeline";
+@use "card";
+@use "card-list";
+@use "simple-table";
+@use "tag-list";
+
+// トップページレイアウト
+@use "main-visual";
+@use "missions";
+@use "service";
+@use "news";
+@use "works";
+@use "company";
+@use "credits";
+
+// Aboutページレイアウト
+@use "about-intro";
+@use "member";
+@use "card-grid-list";
+@use "works-page";

@@ -1,0 +1,39 @@
+.hamburger-button {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  &__open,
+  &__close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__open {
+    opacity: 1;
+  }
+  &__close {
+    opacity: 0;
+  }
+  &.is-active {
+    .hamburger-button__open {
+      opacity: 0;
+    }
+    .hamburger-button__close {
+      opacity: 1;
+    }
+  }
+  &__label {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}

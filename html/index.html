@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>marginに頼らないレイアウト</title>
+  </head>
+  <body class="global-layout">
+    <header class="global-layout__header header">
+      <h1>HOGE</h1>
+      <nav>
+        <ul class="header__navigation">
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">WORKS</a>
+          </li>
+          <li>
+            <a href="#">COMPANY</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <button class="global-layout__hamburger-button hamburger-button">
+      <img
+        class="hamburger-button__open"
+        src="images/open.svg"
+        alt="OPEN"
+        width="32"
+      />
+      <img
+        class="hamburger-button__close"
+        src="images/close.svg"
+        alt="CLOSE"
+        width="32"
+      />
+      <span class="hamburger-button__label"> MENU </span>
+    </button>
+    <main class="global-layout__contents contents-layout">
+      <section class="main-visual">
+        <h2 class="main-visual__title">HOGE</h2>
+      </section>
+      <section class="missions">
+        <h2 class="section-title missions__title">OUR MISSIONS</h2>
+
+        <div class="missions__text">
+          <p class="missions__text-inner">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+            consequuntur corporis cum, et eveniet fuga incidunt, iure minus
+            nihil odio saepe sapiente, sunt vel! Alias neque porro quis ratione
+            soluta?
+          </p>
+        </div>
+      </section>
+      <section class="service">
+        <h2 class="section-title service__title">SERVICE</h2>
+        <div class="alternating-layout">
+          <div class="alternating-layout__item">
+            <img
+              src="./images/service1.jpg"
+              alt="ハムスター"
+              width="800"
+              height="600"
+              class="alternating-layout__image"
+            />
+            <div class="alternating-layout__description">
+              <p class="alternating-layout__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Blanditiis consequuntur corporis cum, et eveniet fuga incidunt,
+                iure minus nihil odio saepe sapiente, sunt vel! Alias neque
+                porro quis ratione soluta?
+              </p>
+            </div>
+          </div>
+          <div class="alternating-layout__item">
+            <img
+              src="./images/service2.jpg"
+              alt="ウミガメ"
+              width="800"
+              height="600"
+              class="alternating-layout__image"
+            />
+            <div class="alternating-layout__description">
+              <p class="alternating-layout__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                dolorem, eos, error eum ex facilis impedit nemo nihil nobis
+                numquam possimus quae reiciendis sunt temporibus unde, veniam
+                voluptas voluptate voluptatum.
+              </p>
+            </div>
+          </div>
+          <div class="alternating-layout__item">
+            <img
+              src="./images/service3.jpg"
+              alt="ライオン"
+              width="800"
+              height="600"
+              class="alternating-layout__image"
+            />
+            <div class="alternating-layout__description">
+              <p class="alternating-layout__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium ad autem, consectetur dignissimos doloribus ea
+                harum, illum molestias nesciunt odit quos, sequi tenetur totam.
+                Asperiores blanditiis neque temporibus ullam ut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <h2 class="section-title news__title">NEWS</h2>
+        <ul class="news__list simple-list">
+          <li class="simple-list__item">
+            <dl class="timeline">
+              <dt class="timeline__time">
+                <time datetime="2021-03-01">2021.03.01</time>
+              </dt>
+              <dd class="timeline__description">
+                『パイナップル』を追加しました。
+              </dd>
+            </dl>
+          </li>
+          <li class="simple-list__item">
+            <dl class="timeline">
+              <dt class="timeline__time">
+                <time datetime="2021-02-01">2021.02.01</time>
+              </dt>
+              <dd class="timeline__description">『すいか』を追加しました。</dd>
+            </dl>
+          </li>
+          <li class="simple-list__item">
+            <dl class="timeline">
+              <dt class="timeline__time">
+                <time datetime="2021-01-01">2021.01.01</time>
+              </dt>
+              <dd class="timeline__description">
+                ウェブサイトを公開しました。
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </section>
+      <section class="works">
+        <h2 class="section-title">WORKS</h2>
+        <ul class="card-list works__list">
+          <li class="card-list__item card">
+            <img
+              class="card__image"
+              src="images/work1.jpg"
+              height="600"
+              width="800"
+              alt="パイナップル"
+            />
+            <h3 class="card__title">『パイナップル』</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+              debitis deleniti doloremque est facere fuga,
+            </p>
+          </li>
+          <li class="card-list__item card">
+            <img
+              class="card__image"
+              src="images/work2.jpg"
+              height="600"
+              width="800"
+              alt="すいか"
+            />
+            <h3 class="card__title">『すいか』</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+              accusamus aperiam asperiores debitis delectus eius illo illum,
+              impedit incidunt itaque necessitatibus nemo.
+            </p>
+          </li>
+          <li class="card-list__item card">
+            <img
+              class="card__image"
+              src="images/work3.jpg"
+              height="600"
+              width="800"
+              alt="オレンジ"
+            />
+            <h3 class="card__title">『オレンジ』</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+              est et ex expedita fuga id illum impedit nisi numquam optio porro.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="company">
+        <h2 class="section-title">COMPANY</h2>
+        <dl class="simple-table company__table">
+          <dt class="simple-table__head">会社名</dt>
+          <dd class="simple-table__description">HOGE Inc.</dd>
+          <dt class="simple-table__head">事業内容</dt>
+          <dd class="simple-table__description">
+            ブランディングコンサルタント
+          </dd>
+          <dt class="simple-table__head">代表</dt>
+          <dd class="simple-table__description">HOGE FUGA PIYO</dd>
+          <dt class="simple-table__head">主要取引先</dt>
+          <dd class="simple-table__description">
+            今北産業 <br />ゴラノスポンサー<br />
+            株式会社 定礎 <br />
+            ほか（50音順）
+          </dd>
+        </dl>
+      </section>
+      <section class="credits">
+        <h2 class="section-title">CREDITS</h2>
+        <p class="credits__lead">Thanks for Photos</p>
+        <ul class="tag-list credits__list">
+          <li>
+            <a
+              class="tag-list__item"
+              href="https://unsplash.com/@vab?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Vincent Abric</a
+            >
+          </li>
+          <li>
+            <a
+              class="tag-list__item"
+              href="https://unsplash.com/@detpho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Francesco De Tommaso</a
+            >
+          </li>
+          <li>
+            <a
+              class="tag-list__item"
+              href="https://unsplash.com/@wexor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Wexor Tmg</a
+            >
+          </li>
+          <li>
+            <a
+              class="tag-list__item"
+              href="https://unsplash.com/@sweetmangostudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Ricky Kharawala</a
+            >
+          </li>
+          <li>
+            <a
+              class="tag-list__item"
+              href="https://unsplash.com/@julienpian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Julien Pianetti</a
+            >
+          </li>
+          <li>
+            <a
+              class="tag-list__item"
+              href="https://unsplash.com/@frostroomhead?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Rodion Kutsaev</a
+            >
+          </li>
+          <li>
+            <a
+              class="tag-list__item"
+              href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Charles Deluvio</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="global-layout__footer footer">
+      <small>Hoge Inc. 2021</small>
+    </footer>
+    <script type="module" src="/main.js" defer></script>
+  </body>
+</html>

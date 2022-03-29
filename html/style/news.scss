@@ -1,0 +1,13 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  &__list {
+    width: 640px;
+    @media screen and (max-width: 768px) {
+      width: auto;
+      padding: 0 24px;
+    }
+  }
+}

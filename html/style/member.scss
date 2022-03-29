@@ -1,0 +1,22 @@
+.member {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  &__list{
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+    &__image{
+      display: block;
+      width: 320px;
+      height: 300px;
+      object-fit: cover;
+      object-position: center center;
+    }
+    &__name{
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 24px;
+    }
+  }
+}

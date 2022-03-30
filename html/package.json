@@ -1,6 +1,7 @@
 {
   "name": "html",
   "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
